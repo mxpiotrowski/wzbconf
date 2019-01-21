@@ -1,0 +1,139 @@
+\documentclass{wzbconf}
+\usepackage[backend=biber, style=authoryear, isbn=false]{biblatex}
+\usepackage{graphicx}
+\usepackage{csquotes}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+
+% Specify your bibliography file here
+\addbibresource{bibliography.bib}
+
+% For convenience
+\newcommand{\q}[1]{\enquote{#1}}
+
+\title{TITLE OF THE WEIZENBAUM CONFERENCE PAPER}
+\author{%
+  1st Author Name \\ Affiliation \\ City, Country \\ e-mail address
+  \And
+  2nd Author Name \\ Affiliation \\ City, Country \\ e-mail address}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+  This template describes the formatting requirements for the proceedings of the Weizenbaum Conference 2019.  Please review this document carefully.  Abstracts should be no longer than 150 words and are required.  The abstract should be a concise statement of the problem, approach, and conclusions of the work described.
+\end{abstract}
+
+\begin{keywords}
+  One; Two; Three; separated; by semicolons; commas, within terms only; Keywords are required
+\end{keywords}
+
+\twocolumn
+
+%% Beginning of main text
+
+\section{Introduction}
+
+The accepted papers of the conference are published in the proceedings.  Authors can opt out from publishing their paper in the proceedings.  To give this volume a consistent, high-quality appearance, we ask that authors follow some simple guidelines.  In essence, you should format your paper exactly like this document.  The easiest way to do this is to replace the placeholder content with your own material.
+
+\section{General Instructions}
+
+Manuscripts must be in two-column format.  Exceptions to the two-column format include the cover page with the title, authors’ names and complete addresses and affiliation, which should run across the full width of the page in a single column 17.8 cm wide.  The font in the entire document, including Hyperlinks, is black and the font Times New Roman.  The title should be 18-point bold with a 6-point line spacing after paragraph.  Authors’ names should be in 12-point bold, and affiliations in the font as 12-point regular.
+
+To position names and addresses, use a single-row table with invisible borders, as in this document.  Put a 16-point line between the table and the beginning of the two-columns.  If you have less than six authors, delete the respective cells by right-click in the unwanted cell, click \q{Delete Cell,} then click \q{OK.} Repeat if necessary.
+
+\section{Page Size}
+
+On each page your material should fit within a rectangle of 17 x 25.7 cm, centered on a DIN A4 page (21 x 29.7cm), beginning 2 cm from the top of the page, with a 0.85 cm space between two columns.  Please be sure your document is DIN A4 and the complete text has 1.15 line spacing.  Hyphenation is required.\footnote{Footnotes are 10-point Times New Roman regular, single-line spacing, numbered and separated from the text by a line at the bottom of the page.}
+
+\section{Length}
+
+Regular papers must not exceed seven (7) pages, and short papers must not exceed two (2) pages.  These page limits include all text, figures, tables, and appendices.  The cover page, abstract, keywords, and references are excluded from this page count.  Submissions that exceed this limit will be automatically rejected.
+
+\section{Body Text \& Highlights}
+
+Please use 12-point Times New Roman regular or, if this is unavailable, another proportional font with serifs, as close as possible in appearance to Times New Roman 12-point.  \textit{To highlight specific words, use italic.}
+
+\section{Sections and Subsections}
+
+The heading of a section should be Times New Roman 16-point bold small capitals and the headings of subsections should be 14-point bold small capitals.  Both have 12-point spacing before paragraph and 6-point spacing after paragraph.  Sections and subsections should be numbered.
+
+\section{References and Citations}
+
+References must be the same style as Body Text, numbered and complete, i.e., include, as appropriate, name, initials of all authors, year, title, editors, publisher, volume, number, month, city, etc.  Please order references alphabetically by last name of first author.
+References in text should be of the format \parencite{Krasnova2015, Gronau2016, Wagner2018} and must be included in Reference section and vice versa.
+
+
+%%%%%%%%%%%%%%%%%%%% Figure/Image No: 1 starts here %%%%%%%%%%%%%%%%%%%%
+
+\begin{figure*}[ht]
+  \centering
+  \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{wzb}
+  \caption{Weizenbaum Logo.  Use high-resolution images, 300+ dpi, legible if printed in color or black-and-white.  Number all figures and include captions below, using Insert > Caption.}
+  \label{fig:logo}
+\end{figure*}
+
+%%%%%%%%%%%%%%%%%%%% Figure/Image No: 1 Ends here %%%%%%%%%%%%%%%%%%%%
+
+\section{Page Numbering, Headers and Footers}
+
+Final submission should not contain page numbers, footer or header information.  Page numbers will be added to the PDF when the proceedings are assembled.
+
+\section{Figures, Tables, Images and Captions}
+
+Place figures, tables and images at the top or bottom of the appropriate column, on the same page as the relevant text.  They may fit in one column with a width of 8.1 cm (see Table~\ref{tab:fontguide}) and may extend across both columns to a maximum width of two columns, 17 cm (see Figure~\ref{fig:logo}).  The words \q{Figure} and \q{Table} should be spelled out wherever they occur.  All figures should also include alt text for improved accessibility.  In Word, right click the figure, and select Format Picture > Layout > Alt Text.  You may use colors, but it must be usable when printed in black-and-white in the proceedings.
+
+%%%%%%%%%%%%%%%%%%%% Table No: 2 starts here %%%%%%%%%%%%%%%%%%%%
+
+\begin{table}[ht]
+  \fontsize{10pt}{12.0pt}\selectfont
+  \begin{tabular}{lrp{3.5cm}}
+    \toprule
+    \textbf{Type of Text} & \textbf{Size} & \textbf{Style} \\
+    \midrule
+    paper title & 18 & bold \\
+    authors' names & 12 & bold \\
+    authors' affiliations & 12 & bold \\
+    section titles & 16 & numbered (excluding Abstract and Keywords), bold, small caps \\
+    subsection titles & 14 & numbered, bold, small caps \\
+    body text & 12 & regular \\
+    footnotes & 10 & numbered, regular \\
+    captions & 9 & numbered, bold \\
+    table content & 10 & regular \\
+    references & 12 & numbered, regular \\
+    \bottomrule
+  \end{tabular}
+  \caption{Font guide.  Table captions should be placed centered below the table.}
+    \label{tab:fontguide}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%% Table No: 2 ends here %%%%%%%%%%%%%%%%%%%%
+
+\section{Language, Style and Content}
+
+The written and spoken language of Weizenbaum Conference is English.  With regard to spelling and punctuation you may use any dialect of English (e.g., British, Canadian, US, etc.) provided this is done consistently.  Write in a straightforward style with common vocabulary and avoid complex sentence structures.  Briefly explain all technical terms and acronyms the first time they are mentioned in your text.  Use inclusive language that is gender-neutral and be particularly aware of considerations around writing about people with disabilities.  Operate with unambiguous forms for times, dates, currencies, and numbers and the full alphabetic character set for names.
+
+\section{Conclusion}
+
+Write for a general audience.  State clearly what you have done and explain how your work is different from previously published work, i.e., the unique contribution that your work makes to the field.  Please consider what the reader will learn from your submission.
+
+\section{Acknowledgments}
+
+The acknowledgments should go immediately before the references.
+
+\printbibliography[heading=bibnumbered]
+
+\end{document}
+
+%%% Local variables:
+%%% TeX-PDF-mode: t
+%%% TeX-engine: xetex
+%%% TeX-open-quote: "\\q{"
+%%% TeX-close-quote: "}"
+%%% sentence-end-double-space: t
+%%% LaTeX-babel-hyphen: nil
+%%% eval: (visual-line-mode)
+%%% End:

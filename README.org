@@ -1,0 +1,18 @@
+#+TITLE: =wzbconf.cls=, a LaTeX document class for the Weizenbaum Conference
+#+AUTHOR: Michael Piotrowski
+#+EMAIL: mxp@dynalabs.de
+
+=wzbconf.cls= implements the stylesheet of the Weizenbaum Conference <https://weizenbaum-conference.org/> as a LaTeX document class.
+
+It is not particularly pretty, but hey, that’s not my fault.  The file =weizenbaum-test.tex= is an example file; it contains the same text as the Word “template.”  Note that the formatting of the Word “template” doesn’t match the instructions it contains, e.g., with respect to the width of title page or the sorting of references.  The LaTeX class tries to do something sensible.
+
+The class itself doesn’t require it, but in order to conform to the conference style I recommend using XeLaTeX to compile your document.  XeLaTeX and the TeX Gyre Termes font are necessary to produce the bold small caps section headings.  Times New Roman as it is generally shipped with operating systems doesn’t have small caps, let alone bold small caps.
+
+If you use XeLaTeX to compile the document, everything should be set up automatically.  TeX Gyre Termes comes with modern TeX distributions; it is also available on Overleaf.  If you don’t have TeX Gyre Termes or XeLaTeX can’t find the font for some reason, you can get TeX Gyre Termes from its home page at
+http://www.gust.org.pl/projects/e-foundry/tex-gyre/termes.  Just get the “4 OTF files” ZIP and install the font as regular operating system fonts.
+
+The =weizenbaum-test.tex= example file uses biblatex and biber for bibliographic references.  Again, this is not technically needed, but highly recommended.  Use \textcite{} for in-text and \parencite{} for parenthetical references.  For example, suppose you’ve got an entry with the key “Weizenbaum1972” in your bibliography.  You would then use it as follows:
+
+#+BEGIN_EXAMPLE LaTeX
+\textcite{Weizenbaum1972} wonders who one insults a machine.  He notes: ``if technology is a nightmare that appears to have its own inevitable logic, it is our nightmare'' \parencite[p.~614]{Weizenbaum1972}.
+#+END_EXAMPLE
