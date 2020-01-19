@@ -26,6 +26,17 @@
 
 \ifthenelse{\boolean{xetex}}{
   \RequirePackage{fontspec}
+
+  % See https://tex.stackexchange.com/questions/470456/
+  \defaultfontfeatures[TeX Gyre Termes]
+  {
+    Extension      = .otf ,
+    UprightFont    = texgyretermes-regular,
+    BoldFont       = texgyretermes-bold,
+    ItalicFont     = texgyretermes-italic,
+    BoldItalicFont = texgyretermes-bolditalic,
+  }
+
   \setmainfont[Mapping=tex-text]{TeX Gyre Termes}
 }{}
 
